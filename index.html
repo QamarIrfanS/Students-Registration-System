@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <script src="index.js"></script>  <!--js file-->
+    <title>Student Registration System</title>
+</head>
+<body>
+
+<header>
+    <h1>Student Registration System</h1>
+    <h3>Welcom..! to <b>Student Registration System</b><br/>This is web-based application that allows
+    students to register by providing their details such as name, student id, email id and contact number
+    Student can register themselves by entering details into corroponding field and press "Add" button. 
+    The added record will be displayed on right side section, if by chance student added a wrong information
+    & they want to edit the details by pressing "Edit" button corrosponding to that record. Or if student wants to
+    delete the whole record such as name, student id, email id and contact no. they can press "Delete" button
+    to delete it. <strong>Students are not allowed to enter empty fields. </strong> Please provide proper details.</h3>
+</header>
+
+<section>
+    <div class="form">
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name">
+
+
+    <label for="id">Student ID:</label>
+    <input type="number" id="id" name="id" placeholder="Student ID">
+
+    <label for="email">E-mail ID:</label>
+    <input type="email" id="email" name="email" placeholder="E-mail ID">
+
+    <label for="contact-no">Contact No.:</label>
+    <input type="tel" id="contact-no" name="contact-no" placeholder="Contact Number" maxlength="10">
+
+    <button onClick="addData()">Add</button>
+
+    </div>
+
+    <div class="display">
+
+        <table class="displayTable">
+            <tr>
+                <th>Name</th>
+                <th>Student ID</th>
+                <th>Email ID</th>
+                <th>Contact No.</th>
+                <th>Action</th>
+            </tr>
+
+            
+    
+        </table>
+    
+    </div>
+</section>
+    
+</body>
+</html>
